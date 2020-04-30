@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- carousel links -->
+    <link rel="stylesheet" href="css/owlcarusel/owl.carousel.min.css">
+
     <!-- Reset Default Styles For Different User Agents  -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:wght@200;400;500&display=swap"
+        rel="stylesheet">
     <!-- Font Awsome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- carusel Cdn -->
-    <link rel="stylesheet" href="css/owlcarusel/owl.carousel.min.css">
     <!-- Custum style Sheet  -->
     <link rel="stylesheet" href="css/style.css">
     <title>Da Brigh</title>
+
 </head>
 
 <body>
@@ -22,21 +27,40 @@
         <div class="container">
 
             <div class="primary-header">
-
                 <div class="brand">
-                    <img src="images/logo-dark.png" alt="da brigh logo">
+                    <a href="/">
+                        <img src="images/logo-dark.png" alt="da brigh logo">
+                    </a>
                 </div>
 
                 <ul class="nav-bar">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Tarot cards</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Tarot cards</a><i class="fas fa-angle-down"></i>
+                        <div class="menu-dropdown">
+                            <ul>
+                                <li><a href="/product.html">upcoming Releases</a></li>
+                                <li><a href="/product.html">classic decks</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
 
-                <div>
-                    <i>icon1</i>
-                    <i>icon2</i>
+                <div class="menu-icons">
+                    <form class="searchbox">
+                        <input type="search" placeholder="Search..." name="search" class="searchbox-input" required>
+                        <!-- class="searchbox-icon" -->
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <a href="#" class="searchbutton">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
                 </div>
             </div>
 
@@ -56,7 +80,7 @@
         <div class="container">
             <div class="section-inner">
                 <div class="section-content">
-                    <h3>Comming Soon</h3>
+                    <h3 class="heading-primary">Comming Soon</h3>
                     <h4>Angels Tarot</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quo mollitia incidunt fugiat
                         cupiditate hic at nam ullam unde, impedit tenetur laudantium officiis assumenda itaque similique
@@ -99,25 +123,22 @@
     <section class="section section-videos">
         <div class="container">
             <div class="section-video-inner">
-                <h3>Video review</h3>
-                video
-                <div class="owl-carousel owl-theme">
-                    <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a>
+                <h3 class="heading-primary">Video review</h3>
+                <div class="videos-wrapper">
+
+                    <div class="owl-carousel">
+
+                        <div class="item-video" data-merge="1"><a class="owl-video"
+                                href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
+                        <div class="item-video" data-merge="1"><a class="owl-video"
+                                href="https://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
+                        <div class="item-video" data-merge="1"><a class="owl-video"
+                                href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
+                        <div class="item-video" data-merge="1"><a class="owl-video"
+                                href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+
                     </div>
-                    <div class="item-video" data-merge="1"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
-                    <div class="item-video" data-merge="2"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
-                    <div class="item-video" data-merge="1"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
-                    <div class="item-video" data-merge="2"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-                    <div class="item-video" data-merge="3"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
-                    <div class="item-video" data-merge="1"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
-                    <div class="item-video" data-merge="2"><a class="owl-video"
-                            href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+
                 </div>
             </div>
         </div>
@@ -141,9 +162,21 @@
                     <h5>Phone: 888-TAROT-UP</h5>
 
                 </div>
-                <div class="social-icons">
+                <div class="col social-icons">
                     <h3>Social Media</h3>
-                    social-icons
+                    <div class="icons-list">
+                        <a href="#">
+                            <img src="images/icons/facebook png.png" alt="face book Page">
+                        </a>
+                        <!-- <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i> -->
+                        <a href="#">
+                            <img src="images/icons/ticktok png.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/insta png.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="copyright-text">
@@ -156,23 +189,28 @@
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
-            items: 1,
+            items: 3,
             merge: true,
             loop: true,
-            margin: 10,
+            margin: 40,
             video: true,
             lazyLoad: true,
             center: true,
+            videoWidth: '100%',
+            videoHeight: 300,
+            dots: true,
+            autoplay: false,
             responsive: {
                 480: {
-                    items: 2
+                    items: 1
                 },
                 600: {
-                    items: 4
+                    items: 3
                 }
             }
-        })
+        });
     </script>
+    <script defer src="js/custom.js"></script>
 </body>
 
 </html>
