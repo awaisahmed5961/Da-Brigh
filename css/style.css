@@ -557,7 +557,8 @@ header {
     position: relative;
 }
 .left-top-line {
-    width: 270px;
+    /* width: 270px; */
+    width: calc( calc(100vw - 1400px) / 2 - 30px);
     height: 5px;
     background-color: var(--primary-color);
 
