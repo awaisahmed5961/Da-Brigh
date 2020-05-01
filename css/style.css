@@ -219,8 +219,7 @@ footer .copyright-text {
     color: #292929;
 }
 .btn-primary:hover{
-    background:linear-gradient(120deg, rgba(253,206,57,1) 0%, rgba(246,146,55,1) 100%);;
-    color: #272727;
+    box-shadow: 0px 0px 20px 0px var(--primary-color);
 }
 .btn-outline {
     border: 1px solid #fdcc39 !important;
